@@ -1,11 +1,11 @@
 {
-  "name": "k3-extension-template",
-  "version": "0.1.0",
+  "name": "k3-external-extension-template",
+  "version": "1.10.1",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@k3/core": "1.5.4",
+    "@k3/core": "1.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -36,8 +36,7 @@
     "build:prod": "env-cmd -f .env.prod react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "login": "aws codeartifact login --tool npm --repository k3 --domain oc --namespace @konfigurator3",
-    "prepare": "husky install"
+    "login": "aws codeartifact login --tool npm --repository k3 --domain oc --namespace @konfigurator3"
   },
   "eslintConfig": {
     "extends": [
