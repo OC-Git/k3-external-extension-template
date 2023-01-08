@@ -36,7 +36,7 @@
     "build:prod": "env-cmd -f .env.prod react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "login": "aws codeartifact login --tool npm --repository k3 --domain oc --namespace @konfigurator3"
+    "login": "aws codeartifact login --tool npm --repository k3 --domain oc --namespace @k3"
   },
   "eslintConfig": {
     "extends": [
