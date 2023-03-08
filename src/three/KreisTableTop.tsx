@@ -8,8 +8,12 @@ export const KreisTabletop = (props: TableProps) => {
   return (
     <Cylinder
       args={[laenge / 1000 / 2, laenge / 1000 / 2, staerke / 1000, 100]}
+      // Dreis types are weird
+      matrixWorldAutoUpdate={undefined}
+      getObjectsByProperty={undefined}
+      getVertexPosition={undefined}
     >
-      <TableMaterial {...props}></TableMaterial>
+      <TableMaterial {...props} />
     </Cylinder>
   );
 };

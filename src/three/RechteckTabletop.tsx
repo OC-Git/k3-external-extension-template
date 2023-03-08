@@ -10,8 +10,12 @@ export const RechteckTabletop = (props: TableProps) => {
       castShadow
       args={[breite / 1000, staerke / 1000, laenge / 1000]}
       radius={schliff}
+      // Dreis types are weird
+      matrixWorldAutoUpdate={undefined}
+      getObjectsByProperty={undefined}
+      getVertexPosition={undefined}
     >
-      <TableMaterial {...props}></TableMaterial>
+      <TableMaterial {...props} />
     </RoundedBox>
   );
 };

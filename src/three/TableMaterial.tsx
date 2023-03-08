@@ -24,6 +24,6 @@ export const TableMaterial = (props: TableProps) => {
       roughness={1}
       metalness={0}
       envMapIntensity={0.75}
-    ></meshStandardMaterial>
+    />
   );
 };

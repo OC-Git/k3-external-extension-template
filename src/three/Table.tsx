@@ -57,10 +57,10 @@ export const Table = () => {
   return (
     <group name="k3d" key="k3d">
       <Suspense fallback={null}>
-        <Tabletop {...tableInformation}></Tabletop>
+        <Tabletop {...tableInformation} />
       </Suspense>
       <Suspense fallback={null}>
-        <Tablelegs {...tableInformation}></Tablelegs>
+        <Tablelegs {...tableInformation} />
       </Suspense>
     </group>
   );
