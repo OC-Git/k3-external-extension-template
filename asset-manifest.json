@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/k3-external-extension-template/static/css/main.3de59473.css",
-    "main.js": "/k3-external-extension-template/static/js/main.0eda753d.js",
+    "main.js": "/k3-external-extension-template/static/js/main.41be54cb.js",
     "static/media/nunito-sans-all-700-normal.woff": "/k3-external-extension-template/static/media/nunito-sans-all-700-normal.9709a8d45fa54da212c6.woff",
     "static/media/nunito-sans-all-400-normal.woff": "/k3-external-extension-template/static/media/nunito-sans-all-400-normal.6829d5bb0386828b00bc.woff",
     "static/media/nunito-sans-all-300-normal.woff": "/k3-external-extension-template/static/media/nunito-sans-all-300-normal.405d5bae28c5e509ec2e.woff",
@@ -22,10 +22,10 @@
     "static/media/nunito-sans-vietnamese-300-normal.woff2": "/k3-external-extension-template/static/media/nunito-sans-vietnamese-300-normal.26a5c98030a80dc7f831.woff2",
     "index.html": "/k3-external-extension-template/index.html",
     "main.3de59473.css.map": "/k3-external-extension-template/static/css/main.3de59473.css.map",
-    "main.0eda753d.js.map": "/k3-external-extension-template/static/js/main.0eda753d.js.map"
+    "main.41be54cb.js.map": "/k3-external-extension-template/static/js/main.41be54cb.js.map"
   },
   "entrypoints": [
     "static/css/main.3de59473.css",
-    "static/js/main.0eda753d.js"
+    "static/js/main.41be54cb.js"
   ]
 }
