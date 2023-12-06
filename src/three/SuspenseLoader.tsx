@@ -5,7 +5,7 @@ import React from 'react';
 
 export const SuspenseLoader = () => {
   const { progress } = useProgress();
-  const url = 'assets/sw.png';
+  const url = 'assets/b-logo-oc.png';
   return (
     <Box
       height={'100%'}

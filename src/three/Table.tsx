@@ -7,35 +7,37 @@ import {
 import { Suspense, useEffect } from 'react';
 import { Tablelegs } from './Tablelegs';
 import { Tabletop } from './Tabletop';
-import { useBounds } from '@react-three/drei';
 import React from 'react';
+import { InnerTable } from './InnerTable';
 
 export interface TableProps {
   breite: number;
   laenge: number;
   staerke: number;
-  gestell: Value;
+  gestell: Value | null;
   gestellhoehe: number;
-  form: Value;
+  form: Value | null;
   schliff: number;
-  bearbeitung: Value;
-  dekor: Value;
+  bearbeitung: Value | null;
+  dekor: Value | null;
 }
 
 export const Table = () => {
-  const bounds = useBounds();
-  const breite = useSelectedNumberByVariableKey('breite');
-  const laenge = useSelectedNumberByVariableKey('laenge');
-  const staerke = useSelectedValueAttributeByKey('staerke', 'staerke')
-    ?.value as number;
-  const form = useSelectedValueByVariableKey('tischform');
-  const schliff = useSelectedValueAttributeByKey('schliff', 'schliff')
-    ?.value as number;
-  const gestell = useSelectedValueByVariableKey('gestell');
-  const bearbeitung = useSelectedValueByVariableKey('bearbeitung');
-  const dekor = useSelectedValueByVariableKey('dekor');
-  const gestellhoehe = useSelectedValueAttributeByKey('gestell', 'gestellhoehe')
-    ?.value as number;
+  const breite = useSelectedNumberByVariableKey('breite') || 0;
+  const laenge = useSelectedNumberByVariableKey('laenge') || 0;
+  const staerke =
+    (useSelectedValueAttributeByKey('staerke', 'staerke')?.value as number) ||
+    0;
+  const form = useSelectedValueByVariableKey('tischform') || null;
+  const schliff =
+    (useSelectedValueAttributeByKey('schliff', 'schliff')?.value as number) ||
+    0;
+  const gestell = useSelectedValueByVariableKey('gestell') || null;
+  const bearbeitung = useSelectedValueByVariableKey('bearbeitung') || null;
+  const dekor = useSelectedValueByVariableKey('dekor') || null;
+  const gestellhoehe =
+    (useSelectedValueAttributeByKey('gestell', 'gestellhoehe')
+      ?.value as number) || 0;
   const tableInformation = {
     breite,
     laenge,
@@ -48,20 +50,22 @@ export const Table = () => {
     dekor,
   };
 
-  useEffect(() => {
-    if (bounds) {
-      bounds.refresh().fit();
-    }
-  }, [breite, laenge]);
+  if (
+    !breite ||
+    !laenge ||
+    !staerke ||
+    !form ||
+    !schliff ||
+    !bearbeitung ||
+    !dekor ||
+    !gestellhoehe
+  ) {
+    return <></>;
+  }
 
   return (
     <group name="k3d" key="k3d">
-      <Suspense fallback={null}>
-        <Tabletop {...tableInformation} />
-      </Suspense>
-      <Suspense fallback={null}>
-        <Tablelegs {...tableInformation} />
-      </Suspense>
+      <InnerTable tableInformation={tableInformation}></InnerTable>
     </group>
   );
 };

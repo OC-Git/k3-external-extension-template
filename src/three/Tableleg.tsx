@@ -2,13 +2,13 @@
 /* eslint-disable react/no-unknown-property */
 import { TableProps } from './Table';
 import { useGLTF } from '@react-three/drei';
-import { useLayoutEffect, useMemo } from 'react';
+import { useEffect, useLayoutEffect, useMemo } from 'react';
 import React from 'react';
 
 export const Tableleg = (
   props: TableProps & { position: 'left' | 'right' }
 ) => {
-  const modelPath = `assets/frames/${props.gestell.key}.gltf`;
+  const modelPath = `assets/frames/${props.gestell?.key}.gltf`;
   const gltf = useGLTF(modelPath);
   const copiedScene = useMemo(() => {
     return gltf.scene.clone();
@@ -20,6 +20,7 @@ export const Tableleg = (
         (obj as any).isMesh && (obj.receiveShadow = obj.castShadow = true)
     );
   });
+
 
   const positionsFaktor = props.position === 'left' ? 1 : -1;
   return (

@@ -7,7 +7,7 @@ import { TableProps } from './Table';
 import React from 'react';
 
 export const TableMaterial = (props: TableProps) => {
-  const materialPath = `assets/decors/${props.dekor.key}`;
+  const materialPath = `assets/decors/${props.dekor?.key}`;
   const colorMap = useLoader(TextureLoader, materialPath + '/baseColor.jpg');
 
   useEffect(() => {

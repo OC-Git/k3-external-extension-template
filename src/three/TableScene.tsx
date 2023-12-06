@@ -36,7 +36,7 @@ export const TableScene = () => {
           getObjectsByProperty={undefined}
         />
         <Sky distance={450000} sunPosition={[0, 1, 0]} />
-        <Environment preset="apartment" />
+        <Environment files="https://oc-k3.s3.eu-central-1.amazonaws.com/libs/3d/environments/apartment.hdr" />
         <OrbitControls makeDefault maxPolarAngle={Math.PI / 2} />
       </CanvasWithScreenshotting>
     </Suspense>
