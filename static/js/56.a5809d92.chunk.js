@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkk3_external_extension_template=self.webpackChunkk3_external_extension_template||[]).push([[56],{89056:(e,t,s)=>{s.r(t),s.d(t,{buttonClasses:()=>l.Z,default:()=>a.Z,getButtonUtilityClass:()=>l.F});var a=s(81945),l=s(91143)}}]);

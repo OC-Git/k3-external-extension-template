@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkk3_external_extension_template=self.webpackChunkk3_external_extension_template||[]).push([[504],{82504:(e,t,a)=>{a.r(t),a.d(t,{default:()=>n.Z});var n=a(64554)}}]);

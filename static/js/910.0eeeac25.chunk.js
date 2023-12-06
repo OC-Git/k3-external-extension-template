@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkk3_external_extension_template=self.webpackChunkk3_external_extension_template||[]).push([[910],{49910:(e,t,a)=>{a.r(t),a.d(t,{default:()=>s.Z,getTypographyUtilityClass:()=>l.f,typographyClasses:()=>l.Z});var s=a(4567),l=a(40940)}}]);

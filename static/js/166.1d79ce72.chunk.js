@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkk3_external_extension_template=self.webpackChunkk3_external_extension_template||[]).push([[166],{95166:(e,t,s)=>{s.r(t),s.d(t,{default:()=>a.Z,getSwitchUtilityClass:()=>l.H,switchClasses:()=>l.Z});var a=s(89891),l=s(93785)}}]);
