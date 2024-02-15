@@ -6,7 +6,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@k3/core": "^4.2.11",
+    "@k3/core": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
