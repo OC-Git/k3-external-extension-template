@@ -16,7 +16,7 @@ Key points of the template are:
 * run `npm run login` in your CLI in this Repo
 
 ## Import App
-* Download the APP-JSON here: https://oc-k3.s3.amazonaws.com/assets/data/current/cb176540-ba15-4642-9549-e70a6e11ebaa.de.json
+* Download the APP-JSON [here](https://oc-k3-fe.s3.eu-central-1.amazonaws.com/training/tisch.json).
 * Create a Configurator in K3 and import the JSON above
 * Publish this configurator
 * Copy and paste the App-URL according to published URL - looks like ?app=xxx
